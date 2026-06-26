@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Düğünümüze Davetlisiniz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dijital_davetiye.css">
+</head>
+<body>
+
+    <section class="hero">
+        <p>Birlikte yeni bir hayata adım atarken...</p>
+        <div class="divider"></div>
+        <h1>Gelin & Damat</h1>
+        <div class="divider"></div>
+        <p>25 Eylül 2026</p>
+    </section>
+
+    <section class="countdown-section">
+        <h2>Düğünümüze Kalan Zaman</h2>
+        <div class="countdown-container" id="countdown">
+            <div class="time-box">
+                <span id="days">00</span>
+                <p>Gün</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Saat</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Dakika</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Saniye</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Özel Anlarımız</h2>
+        <div class="gallery-container">
+            <div class="photo-stack" id="photoStack">
+                <div class="photo-item"><img src="dugunfoto6.png" alt="Fotoğraf 6"></div>
+                <div class="photo-item"><img src="dugunfoto5.png" alt="Fotoğraf 5"></div>
+                <div class="photo-item"><img src="dugunfoto4.png" alt="Fotoğraf 4"></div>
+                <div class="photo-item"><img src="dugunfoto3.png" alt="Fotoğraf 3"></div>
+                <div class="photo-item"><img src="dugunfoto2.png" alt="Fotoğraf 2"></div>
+                <div class="photo-item"><img src="dugunfoto.png" alt="Fotoğraf 1"></div>
+            </div>
+            <div class="slider-hint">Diğer fotoğrafları görmek için tıklayabilirsiniz</div>
+        </div>
+    </section>
+
+    <section class="location-section">
+        <h2>Düğün Yeri ve Konum</h2>
+        <p><strong>Yaman Kır Düğün Salonu</strong></p>
+        <p>Yenice, Cihadiye Sk. No:85, 54900 Pamukova/Sakarya</p>
+        
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43925.38557772845!2d30.101300148632802!3d40.5041117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc9e36bc962b09%3A0x3c826cb3bb49fdeb!2zWWFtYW4ga8SxciBkw7zEn8O8biBTYXJhecSxIHNhbG9udQ!5e1!3m2!1str!2str!4v1782476629312!5m2!1str!2str" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="family-section">
+        <div class="family-container">
+            <div class="family-column">
+                <h3>Gelin Ailesi</h3>
+                <p>Anne Adı & Baba Adı</p>
+            </div>
+            <div class="family-divider"></div>
+            <div class="family-column">
+                <h3>Damat Ailesi</h3>
+                <p>Anne Adı & Baba Adı</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>İletişim & Detaylar</h2>
+        <p class="contact-subtitle">Sorularınız veya katılım durumunuzu bildirmek için bizimle iletişime geçebilirsiniz.</p>
+        <div class="contact-container">
+            <div class="contact-card">
+                <h4>Gelin Yakını</h4>
+                <p class="phone-number"><a href="tel:+905555555555">0 (555) 555 55 55</a></p>
+            </div>
+            <div class="contact-card">
+                <h4>Damat Yakını</h4>
+                <p class="phone-number"><a href="tel:+905444444444">0 (544) 444 44 44</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsvp-section" id="rsvpSection">
+        <h2>Katılım Durumu</h2>
+        <p class="rsvp-subtitle">Sizi aramızda görmekten mutluluk duyacağız. Lütfen katılım durumunuzu bildirin.</p>
+        
+        <div id="rsvpFormContainer">
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="guestName">Adınız Soyadınız</label>
+                    <input type="text" id="guestName" required placeholder="Örnek: Ahmet Yılmaz">
+                </div>
+                
+                <div class="form-group">
+                    <label>Katılım Durumunuz</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="katiliyorum" checked required>
+                            <span>Evet, Katılacağım</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="katilamiyorum">
+                            <span>Hayır, Katılamayacağım</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="rsvp-btn">Katılım Bilgisini Gönder</button>
+            </form>
+        </div>
+        <div class="form-message" id="formMessage"></div>
+    </section>
+
+    <footer>
+        <p>Sizi de aramızda görmekten mutluluk duyarız!</p>
+    </footer>
+
+    <script src="dijital_davetiye.js"></script>
+</body>
+</html>
