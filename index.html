@@ -105,10 +105,32 @@
         <h2>Katılım Durumu</h2>
         <p class="rsvp-subtitle">Sizi aramızda görmekten mutluluk duyacağız. Lütfen katılım durumunuzu bildirin.</p>
         
-        <div class="tally-container">
-            <iframe data-tally-src="https://tally.so/r/1Axdgl" width="100%" height="450" frameborder="0" marginheight="0" marginwidth="0" title="Düğüne Katılım"></iframe>
+        <div id="rsvpFormContainer">
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="guestName">Adınız Soyadınız</label>
+                    <input type="text" id="guestName" required placeholder="Örnek: Ahmet Yılmaz">
+                </div>
+                
+                <div class="form-group">
+                    <label>Katılım Durumunuz</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="katiliyorum" checked required>
+                            <span>Evet, Katılacağım</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="katilamiyorum">
+                            <span>Hayır, Katılamayacağım</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="rsvp-btn">Katılım Bilgisini Gönder</button>
+            </form>
         </div>
-    </sect>
+        <div class="form-message" id="formMessage"></div>
+    </section>
 
     <footer>
         <p>Sizi de aramızda görmekten mutluluk duyarız!</p>
