@@ -27,7 +27,7 @@ Bu proje saf frontend teknolojileriyle (HTML/CSS/JS) geliştirildiği için herh
 **1. Proje Dosyalarını İndirin**
 Terminalinizi açın ve kodları bilgisayarınıza çekmek için şu komutu çalıştırın:
 ```bash
-git clone [https://github.com/ikbaltorun/dijital_davetiye.git](https://github.com/ikbaltorun/dijital_davetiye.git)
+git clone (https://github.com/ikbaltorun/dijital_davetiye.git)
 ```
 
 **2. Projeyi Çalıştırın**
