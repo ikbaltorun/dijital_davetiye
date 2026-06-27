@@ -32,5 +32,5 @@ git clone [https://github.com/ikbaltorun/dijital_davetiye.git](https://github.co
 
 **2. Projeyi Çalıştırın**
 İndirdiğiniz klasörün içindeki index.html dosyasını herhangi bir web tarayıcısında (Chrome, Safari, Edge vb.) çift tıklayarak açmanız yeterlidir. (Geliştiriciler, VS Code üzerinden "Live Server" eklentisiyle de anlık önizleme yapabilirler).
-
-İkbal Torun | 2026
+---
+*İkbal Torun | 2026*
